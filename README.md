@@ -11,12 +11,12 @@ Instructions
 3. Upload the __boot.sh__ script to __/etc/init.d/ephemeral__.
 4. Change permissions and ownership of the __/etc/init.d/ephemeral__ script.
 
-> sudo chown root:root /etc/init.d/ephemeral
-> sudo chmod 755 /etc/init.d/ephemeral
+	> sudo chown root:root /etc/init.d/ephemeral
+	> sudo chmod 755 /etc/init.d/ephemeral
 
 5. Run the script on startup.
 
-> sudo update-rc.d ephemeral defaults 00
+	> sudo update-rc.d ephemeral defaults 00
 
 6. Create an AMI from the instance. Make sure the AMI has all of the ephemeral mounts specified in /dev/sd[bcde].
 
